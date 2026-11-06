@@ -1,116 +1,622 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#102f2c">
-  <meta name="description" content="GeoX is a collaborative research initiative exploring geospatial world models through 3D reconstruction, maritime simulation, video generation, and physical environment modeling.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="GeoX — Geospatial World Models">
-  <meta property="og:description" content="Reconstruct. Generate. Simulate. Exploring the next frontier of geospatial world models.">
-  <meta property="og:url" content="https://geox-research.github.io/">
-  <meta property="og:image" content="https://geox-research.github.io/assets/hero-delta.jpg">
-  <meta property="og:image:alt" content="Landsat 8 satellite view of coastal waters at the Lena River Delta">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="GeoX — Geospatial World Models">
-  <meta name="twitter:description" content="Reconstruct. Generate. Simulate. Exploring geospatial world models.">
-  <link rel="canonical" href="https://geox-research.github.io/">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="preload" as="image" href="assets/hero-delta.jpg" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
-  <title>GeoX — Geospatial World Models</title>
-</head>
-<body>
-  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
-  <header class="site-header" id="top">
-    <div class="nav-shell">
-      <a class="brand" href="#home" aria-label="GeoX home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Geo<span class="brand-x">X</span><small>RESEARCH</small></span></a>
-      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
-        <a href="#vision" data-i18n="navVision">Our vision</a>
-        <a href="#research" data-i18n="navResearch">Research</a>
-        <a href="#about" data-i18n="navAbout">About GeoX</a>
-      </nav>
-      <div class="nav-actions">
-        <button class="language-button" id="language-button" aria-label="Switch to Chinese" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a18 18 0 0 1 0 18M12 3a18 18 0 0 0 0 18"/></svg><span id="language-label">中文</span></button>
-        <a class="nav-github" href="https://github.com/GeoX-research" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open navigation"><span></span><span></span></button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#102f2c" />
+    <meta
+      name="description"
+      content="GeoX is a collaborative research initiative exploring geospatial world models through 3D reconstruction, maritime simulation, video generation, and physical environment modeling."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="GeoX — Geospatial World Models" />
+    <meta
+      property="og:description"
+      content="Reconstruct. Generate. Simulate. Exploring the next frontier of geospatial world models."
+    />
+    <meta property="og:url" content="https://geox-research.github.io/" />
+    <meta
+      property="og:image"
+      content="https://geox-research.github.io/assets/hero-delta.jpg"
+    />
+    <meta
+      property="og:image:alt"
+      content="Landsat 8 satellite view of coastal waters at the Lena River Delta"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="GeoX — Geospatial World Models" />
+    <meta
+      name="twitter:description"
+      content="Reconstruct. Generate. Simulate. Exploring geospatial world models."
+    />
+    <link rel="canonical" href="https://geox-research.github.io/" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/hero-delta.jpg"
+      fetchpriority="high"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+    <title>GeoX — Geospatial World Models</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header" id="top">
+      <div class="nav-shell">
+        <a class="brand" href="#home" aria-label="GeoX home"
+          ><span class="brand-symbol" aria-hidden="true"
+            ><i></i><i></i><i></i><i></i></span
+          ><span
+            >Geo<span class="brand-x">X</span><small>RESEARCH</small></span
+          ></a
+        >
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#vision" data-i18n="navVision">Our vision</a>
+          <a href="#research" data-i18n="navResearch">Research</a>
+          <a href="#about" data-i18n="navAbout">About GeoX</a>
+        </nav>
+        <div class="nav-actions">
+          <button
+            class="language-button"
+            id="language-button"
+            aria-label="Switch to Chinese"
+            type="button"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.5"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="9" />
+              <path
+                d="M3 12h18M12 3a18 18 0 0 1 0 18M12 3a18 18 0 0 0 0 18"
+              /></svg
+            ><span id="language-label">中文</span>
+          </button>
+          <a
+            class="nav-github"
+            href="https://github.com/GeoX-research"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub <span aria-hidden="true">↗</span></a
+          >
+          <button
+            class="menu-toggle"
+            id="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-nav"
+            aria-label="Open navigation"
+          >
+            <span></span><span></span>
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-  <main id="main">
-    <section class="hero" id="home" aria-labelledby="hero-heading">
-      <img class="hero-image" src="assets/hero-delta.jpg" alt="Satellite view of coastal waters and sediment patterns near the Lena River Delta" data-i18n-alt="heroAlt" fetchpriority="high" width="2200" height="1328">
-      <div class="hero-shade"></div><div class="hero-grid" aria-hidden="true"></div>
-      <div class="hero-content wrap">
-        <p class="eyebrow hero-eyebrow"><span class="status-dot" aria-hidden="true"></span><span data-i18n="heroEyebrow">GEOSPATIAL WORLD MODELS</span></p>
-        <h1 id="hero-heading"><span data-i18n="heroLine1">A world to understand.</span><span class="hero-line-accent" data-i18n="heroLine2">New worlds to create.</span></h1>
-        <p class="hero-description" data-i18n="heroDescription">Connecting spatial intelligence, generative modeling, and physical simulation to explore the world beyond observation.</p>
-        <a class="button button-lime" href="#research"><span data-i18n="heroCta">Explore our research</span><span aria-hidden="true">↗</span></a>
-      </div>
-      <div class="hero-bottom wrap">
-        <p class="hero-mantra" data-i18n="heroMantra">RECONSTRUCT / GENERATE / SIMULATE</p>
-        <span class="hero-image-label" data-i18n="heroLocation">LENA RIVER DELTA · EARTH OBSERVATION</span>
-        <a class="scroll-link" href="#vision" aria-label="Scroll to our vision"><span aria-hidden="true">↓</span></a>
-      </div>
-    </section>
+    </header>
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="hero-heading">
+        <img
+          class="hero-image"
+          src="assets/hero-delta.jpg"
+          alt="Satellite view of coastal waters and sediment patterns near the Lena River Delta"
+          data-i18n-alt="heroAlt"
+          fetchpriority="high"
+          width="2200"
+          height="1328"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content wrap">
+          <p class="eyebrow hero-eyebrow">
+            <span class="status-dot" aria-hidden="true"></span
+            ><span data-i18n="heroEyebrow">GEOSPATIAL WORLD MODELS</span>
+          </p>
+          <h1 id="hero-heading">
+            <span data-i18n="heroLine1">A world to understand.</span
+            ><span class="hero-line-accent" data-i18n="heroLine2"
+              >New worlds to create.</span
+            >
+          </h1>
+          <p class="hero-description" data-i18n="heroDescription">
+            Connecting spatial intelligence, generative modeling, and physical
+            simulation to explore the world beyond observation.
+          </p>
+          <a class="button button-lime" href="#research"
+            ><span data-i18n="heroCta">Explore our research</span
+            ><span aria-hidden="true">↗</span></a
+          >
+        </div>
+        <div class="hero-bottom wrap">
+          <p class="hero-mantra" data-i18n="heroMantra">
+            RECONSTRUCT / GENERATE / SIMULATE
+          </p>
+          <span class="hero-image-label" data-i18n="heroLocation"
+            >LENA RIVER DELTA · EARTH OBSERVATION</span
+          >
+          <a
+            class="scroll-link"
+            href="#vision"
+            aria-label="Scroll to our vision"
+            ><span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
 
-    <section class="vision section-space" id="vision" aria-labelledby="vision-heading">
+      <section
+        class="vision section-space"
+        id="vision"
+        aria-labelledby="vision-heading"
+      >
+        <div class="wrap">
+          <div class="section-marker">
+            <span data-i18n="visionEyebrow">01 / OUR VISION</span
+            ><span class="marker-line"></span
+            ><span aria-hidden="true">GEOX</span>
+          </div>
+          <div class="vision-intro">
+            <h2 id="vision-heading">
+              <span data-i18n="visionLine1">Beyond observation.</span
+              ><span class="text-muted" data-i18n="visionLine2"
+                >Toward world models.</span
+              >
+            </h2>
+            <div class="vision-copy">
+              <p data-i18n="visionDescription">
+                The world is spatial, dynamic, and interconnected. Understanding
+                it calls for models that bring geometry, appearance, motion, and
+                physical processes together.
+              </p>
+              <p data-i18n="visionDescription2">
+                GeoX explores this shared foundation through four complementary
+                research directions — from reconstructed scenes to simulated
+                environments.
+              </p>
+            </div>
+          </div>
+          <div class="principles">
+            <article>
+              <span class="principle-number">01</span>
+              <h3 data-i18n="reconstruct">Reconstruct.</h3>
+              <p data-i18n="reconstructText">
+                Recover the structure and state of the world from observations.
+              </p>
+              <span class="principle-icon" aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span class="principle-number">02</span>
+              <h3 data-i18n="generate">Generate.</h3>
+              <p data-i18n="generateText">
+                Explore new scenes and dynamic visual worlds through generative
+                models.
+              </p>
+              <span class="principle-icon" aria-hidden="true">↗</span>
+            </article>
+            <article>
+              <span class="principle-number">03</span>
+              <h3 data-i18n="simulate">Simulate.</h3>
+              <p data-i18n="simulateText">
+                Model how environments evolve across space, time, and physical
+                processes.
+              </p>
+              <span class="principle-icon" aria-hidden="true">↗</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="research section-space"
+        id="research"
+        aria-labelledby="research-heading"
+      >
+        <div class="wrap">
+          <div class="section-marker">
+            <span data-i18n="researchEyebrow">02 / RESEARCH DIRECTIONS</span
+            ><span class="marker-line"></span><span>01—04</span>
+          </div>
+          <div class="section-heading">
+            <h2 id="research-heading">
+              <span data-i18n="researchLine1">One world.</span
+              ><span class="text-muted" data-i18n="researchLine2"
+                >Four perspectives.</span
+              >
+            </h2>
+            <p data-i18n="researchIntro">
+              Across geometry, oceans, motion, and physics. Explore the
+              questions that connect our research.
+            </p>
+          </div>
+          <div
+            class="research-tabs"
+            role="tablist"
+            aria-label="Research directions"
+            data-i18n-aria="researchTabs"
+          >
+            <button
+              class="research-tab"
+              id="tab-3d"
+              role="tab"
+              type="button"
+              aria-selected="true"
+              aria-controls="panel-3d"
+              tabindex="0"
+            >
+              <span class="tab-number">01</span><span>GeoX-3D</span
+              ><span class="tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button
+              class="research-tab"
+              id="tab-marine"
+              role="tab"
+              type="button"
+              aria-selected="false"
+              aria-controls="panel-marine"
+              tabindex="-1"
+            >
+              <span class="tab-number">02</span><span>GeoX-Marine</span
+              ><span class="tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button
+              class="research-tab"
+              id="tab-video"
+              role="tab"
+              type="button"
+              aria-selected="false"
+              aria-controls="panel-video"
+              tabindex="-1"
+            >
+              <span class="tab-number">03</span><span>GeoX-Video</span
+              ><span class="tab-arrow" aria-hidden="true">↗</span>
+            </button>
+            <button
+              class="research-tab"
+              id="tab-physics"
+              role="tab"
+              type="button"
+              aria-selected="false"
+              aria-controls="panel-physics"
+              tabindex="-1"
+            >
+              <span class="tab-number">04</span><span>GeoX-Physics</span
+              ><span class="tab-arrow" aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div
+            class="research-panel"
+            id="panel-3d"
+            role="tabpanel"
+            aria-labelledby="tab-3d"
+            tabindex="0"
+          >
+            <figure class="research-visual">
+              <img
+                src="assets/research-3d.webp"
+                width="609"
+                height="341"
+                alt="Illustrative aerial 3D scene with buildings and terrain"
+                data-i18n-alt="image3d"
+              />
+              <figcaption>
+                <span>01 / GEOX-3D</span
+                ><span data-i18n="illustration">RESEARCH ILLUSTRATION</span>
+              </figcaption>
+              <span class="image-cross cross-tl" aria-hidden="true">+</span
+              ><span class="image-cross cross-br" aria-hidden="true">+</span>
+            </figure>
+            <div class="research-copy">
+              <p class="eyebrow" data-i18n="category3d">SPATIAL INTELLIGENCE</p>
+              <h3 data-i18n="title3d">
+                Reconstruct the world.<br />Create what comes next.
+              </h3>
+              <p data-i18n="desc3d">
+                Exploring 3D reconstruction, scene generation, and spatial
+                representations for geospatial environments across scales.
+              </p>
+              <ul class="research-topics">
+                <li data-i18n="topic3d1">Large-scale 3D reconstruction</li>
+                <li data-i18n="topic3d2">3D scene generation</li>
+                <li data-i18n="topic3d3">Spatial representations</li>
+              </ul>
+              <span class="research-domain" data-i18n="domain3d"
+                >GEOMETRY / APPEARANCE / SPACE</span
+              >
+            </div>
+          </div>
+          <div
+            class="research-panel"
+            id="panel-marine"
+            role="tabpanel"
+            aria-labelledby="tab-marine"
+            tabindex="0"
+            hidden
+          >
+            <figure class="research-visual">
+              <img
+                src="assets/research-marine.webp"
+                width="605"
+                height="335"
+                alt="Illustration of a maritime environment with vessels and coastal terrain"
+                data-i18n-alt="imageMarine"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>02 / GEOX-MARINE</span
+                ><span data-i18n="illustration">RESEARCH ILLUSTRATION</span>
+              </figcaption>
+              <span class="image-cross cross-tl" aria-hidden="true">+</span
+              ><span class="image-cross cross-br" aria-hidden="true">+</span>
+            </figure>
+            <div class="research-copy">
+              <p class="eyebrow" data-i18n="categoryMarine">
+                MARITIME INTELLIGENCE
+              </p>
+              <h3 data-i18n="titleMarine">
+                Complex waters.<br />Connected worlds.
+              </h3>
+              <p data-i18n="descMarine">
+                Studying world modeling, dynamic evolution, and scenario
+                simulation for maritime and complex coastal environments.
+              </p>
+              <ul class="research-topics">
+                <li data-i18n="topicMarine1">Maritime world modeling</li>
+                <li data-i18n="topicMarine2">Coastal scene simulation</li>
+                <li data-i18n="topicMarine3">Dynamic environment modeling</li>
+              </ul>
+              <span class="research-domain" data-i18n="domainMarine"
+                >OCEANS / VESSELS / ENVIRONMENTS</span
+              >
+            </div>
+          </div>
+          <div
+            class="research-panel"
+            id="panel-video"
+            role="tabpanel"
+            aria-labelledby="tab-video"
+            tabindex="0"
+            hidden
+          >
+            <figure class="research-visual">
+              <img
+                src="assets/research-video.webp"
+                width="608"
+                height="335"
+                alt="Aerial coastal landscape illustrating video generation and dynamic visual environments"
+                data-i18n-alt="imageVideo"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>03 / GEOX-VIDEO</span
+                ><span data-i18n="illustration">RESEARCH ILLUSTRATION</span>
+              </figcaption>
+              <span class="image-cross cross-tl" aria-hidden="true">+</span
+              ><span class="image-cross cross-br" aria-hidden="true">+</span>
+            </figure>
+            <div class="research-copy">
+              <p class="eyebrow" data-i18n="categoryVideo">
+                DYNAMIC VISUAL WORLDS
+              </p>
+              <h3 data-i18n="titleVideo">
+                Beyond a frame.<br />Into a moving world.
+              </h3>
+              <p data-i18n="descVideo">
+                Exploring video generation and spatiotemporal modeling for
+                aerial imagery and other dynamic visual environments.
+              </p>
+              <ul class="research-topics">
+                <li data-i18n="topicVideo1">Aerial video generation</li>
+                <li data-i18n="topicVideo2">Camera-conditioned modeling</li>
+                <li data-i18n="topicVideo3">Spatiotemporal representations</li>
+              </ul>
+              <span class="research-domain" data-i18n="domainVideo"
+                >MOTION / PERSPECTIVE / TIME</span
+              >
+            </div>
+          </div>
+          <div
+            class="research-panel"
+            id="panel-physics"
+            role="tabpanel"
+            aria-labelledby="tab-physics"
+            tabindex="0"
+            hidden
+          >
+            <figure class="research-visual">
+              <img
+                src="assets/research-physics.webp"
+                width="1000"
+                height="560"
+                alt="Illustrative visualization of wind and physical environmental fields"
+                data-i18n-alt="imagePhysics"
+                loading="lazy"
+              />
+              <figcaption>
+                <span>04 / GEOX-PHYSICS</span
+                ><span data-i18n="illustration">RESEARCH ILLUSTRATION</span>
+              </figcaption>
+              <span class="image-cross cross-tl" aria-hidden="true">+</span
+              ><span class="image-cross cross-br" aria-hidden="true">+</span>
+            </figure>
+            <div class="research-copy">
+              <p class="eyebrow" data-i18n="categoryPhysics">
+                PHYSICAL ENVIRONMENTS
+              </p>
+              <h3 data-i18n="titlePhysics">
+                Invisible processes.<br />New perspectives.
+              </h3>
+              <p data-i18n="descPhysics">
+                Investigating the reconstruction, super-resolution, and dynamic
+                modeling of wind fields and other physical environments.
+              </p>
+              <ul class="research-topics">
+                <li data-i18n="topicPhysics1">Wind-field reconstruction</li>
+                <li data-i18n="topicPhysics2">
+                  Physical-field super-resolution
+                </li>
+                <li data-i18n="topicPhysics3">Environmental dynamics</li>
+              </ul>
+              <span class="research-domain" data-i18n="domainPhysics"
+                >FIELDS / DYNAMICS / PHYSICS</span
+              >
+            </div>
+          </div>
+          <noscript
+            ><style>
+              .research-panel[hidden] {
+                display: grid !important;
+                margin-top: 40px;
+              }
+              .research-tabs {
+                display: none;
+              }
+              @media (max-width: 760px) {
+                .nav-shell {
+                  height: auto;
+                  min-height: 76px;
+                  flex-wrap: wrap;
+                  padding-block: 16px;
+                }
+                .main-nav {
+                  display: flex;
+                  position: static;
+                  order: 3;
+                  flex-basis: 100%;
+                  flex-direction: row;
+                  padding: 0;
+                  box-shadow: none;
+                  border: 0;
+                  gap: 24px;
+                }
+                .main-nav a {
+                  font-size: 12px;
+                  padding: 8px 0;
+                }
+                .menu-toggle {
+                  display: none;
+                }
+              }
+            </style></noscript
+          >
+        </div>
+      </section>
+
+      <section
+        class="about section-space"
+        id="about"
+        aria-labelledby="about-heading"
+      >
+        <div class="about-globe" aria-hidden="true">
+          <svg viewBox="0 0 600 600" fill="none">
+            <g stroke="currentColor" stroke-width=".65">
+              <circle cx="300" cy="300" r="260" />
+              <ellipse cx="300" cy="300" rx="190" ry="260" />
+              <ellipse cx="300" cy="300" rx="95" ry="260" />
+              <path d="M300 40v520M40 300h520" />
+              <ellipse cx="300" cy="300" rx="260" ry="190" />
+              <ellipse cx="300" cy="300" rx="260" ry="95" />
+              <ellipse cx="300" cy="300" rx="260" ry="32" />
+              <ellipse cx="300" cy="300" rx="32" ry="260" />
+            </g>
+            <circle cx="473" cy="192" r="6" fill="#d7f782" />
+            <circle cx="473" cy="192" r="16" stroke="#d7f782" opacity=".4" />
+          </svg>
+        </div>
+        <div class="wrap about-inner">
+          <div class="section-marker">
+            <span data-i18n="aboutEyebrow">03 / ABOUT GEOX</span
+            ><span class="marker-line"></span><span aria-hidden="true">↗</span>
+          </div>
+          <div class="about-content">
+            <h2 id="about-heading">
+              <span data-i18n="aboutLine1">Across scales.</span
+              ><span data-i18n="aboutLine2">Across worlds.</span>
+            </h2>
+            <p data-i18n="aboutDescription">
+              GeoX is a collaborative research initiative for geospatial world
+              models. We connect research in 3D reconstruction and generation,
+              maritime modeling, video generation, and physical environments.
+            </p>
+            <p class="about-secondary" data-i18n="aboutDescription2">
+              A shared vision brings these directions together: developing
+              richer representations of our world and exploring how it can be
+              reconstructed, generated, and simulated.
+            </p>
+            <a
+              class="text-link"
+              href="https://github.com/GeoX-research"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span data-i18n="aboutCta">Discover GeoX on GitHub</span
+              ><span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <p class="about-caption" data-i18n="aboutCaption">
+            SPACE × TIME × PHYSICS
+          </p>
+        </div>
+      </section>
+
+      <section class="connect" aria-labelledby="connect-heading">
+        <div class="wrap connect-inner">
+          <div>
+            <p class="eyebrow" data-i18n="connectEyebrow">
+              FOLLOW THE EXPLORATION
+            </p>
+            <h2 id="connect-heading" data-i18n="connectHeading">
+              The next perspective<br />starts here.
+            </h2>
+          </div>
+          <div class="connect-action">
+            <p data-i18n="connectDescription">
+              Explore our research initiative and follow future resources on
+              GitHub.
+            </p>
+            <a
+              class="button button-dark"
+              href="https://github.com/GeoX-research"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><span data-i18n="connectCta">Visit our GitHub</span
+              ><span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
       <div class="wrap">
-        <div class="section-marker"><span data-i18n="visionEyebrow">01 / OUR VISION</span><span class="marker-line"></span><span aria-hidden="true">GEOX</span></div>
-        <div class="vision-intro">
-          <h2 id="vision-heading"><span data-i18n="visionLine1">Beyond observation.</span><span class="text-muted" data-i18n="visionLine2">Toward world models.</span></h2>
-          <div class="vision-copy"><p data-i18n="visionDescription">The world is spatial, dynamic, and interconnected. Understanding it calls for models that bring geometry, appearance, motion, and physical processes together.</p><p data-i18n="visionDescription2">GeoX explores this shared foundation through four complementary research directions — from reconstructed scenes to simulated environments.</p></div>
+        <div class="footer-main">
+          <a class="brand footer-brand" href="#home" aria-label="GeoX home"
+            ><span>Geo<span class="brand-x">X</span></span></a
+          >
+          <p data-i18n="footerDescriptor">
+            Geospatial World Models<br />Reconstruct. Generate. Simulate.
+          </p>
+          <a class="back-top" href="#home"
+            ><span data-i18n="backTop">Back to top</span
+            ><span aria-hidden="true">↑</span></a
+          >
         </div>
-        <div class="principles">
-          <article><span class="principle-number">01</span><h3 data-i18n="reconstruct">Reconstruct.</h3><p data-i18n="reconstructText">Recover the structure and state of the world from observations.</p><span class="principle-icon" aria-hidden="true">↗</span></article>
-          <article><span class="principle-number">02</span><h3 data-i18n="generate">Generate.</h3><p data-i18n="generateText">Explore new scenes and dynamic visual worlds through generative models.</p><span class="principle-icon" aria-hidden="true">↗</span></article>
-          <article><span class="principle-number">03</span><h3 data-i18n="simulate">Simulate.</h3><p data-i18n="simulateText">Model how environments evolve across space, time, and physical processes.</p><span class="principle-icon" aria-hidden="true">↗</span></article>
+        <div class="footer-bottom">
+          <span>© <span id="year">2026</span> GeoX Research</span
+          ><a
+            class="image-credit"
+            href="https://science.nasa.gov/earth/earth-observatory/the-arctics-largest-delta-148899/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="imageCredit"
+            >Satellite imagery: NASA Earth Observatory</a
+          ><a
+            href="https://github.com/GeoX-research"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub ↗</a
+          >
         </div>
       </div>
-    </section>
-
-    <section class="research section-space" id="research" aria-labelledby="research-heading">
-      <div class="wrap">
-        <div class="section-marker"><span data-i18n="researchEyebrow">02 / RESEARCH DIRECTIONS</span><span class="marker-line"></span><span>01—04</span></div>
-        <div class="section-heading"><h2 id="research-heading"><span data-i18n="researchLine1">One world.</span><span class="text-muted" data-i18n="researchLine2">Four perspectives.</span></h2><p data-i18n="researchIntro">Across geometry, oceans, motion, and physics. Explore the questions that connect our research.</p></div>
-        <div class="research-tabs" role="tablist" aria-label="Research directions" data-i18n-aria="researchTabs">
-          <button class="research-tab" id="tab-3d" role="tab" type="button" aria-selected="true" aria-controls="panel-3d" tabindex="0"><span class="tab-number">01</span><span>GeoX-3D</span><span class="tab-arrow" aria-hidden="true">↗</span></button>
-          <button class="research-tab" id="tab-marine" role="tab" type="button" aria-selected="false" aria-controls="panel-marine" tabindex="-1"><span class="tab-number">02</span><span>GeoX-Marine</span><span class="tab-arrow" aria-hidden="true">↗</span></button>
-          <button class="research-tab" id="tab-video" role="tab" type="button" aria-selected="false" aria-controls="panel-video" tabindex="-1"><span class="tab-number">03</span><span>GeoX-Video</span><span class="tab-arrow" aria-hidden="true">↗</span></button>
-          <button class="research-tab" id="tab-physics" role="tab" type="button" aria-selected="false" aria-controls="panel-physics" tabindex="-1"><span class="tab-number">04</span><span>GeoX-Physics</span><span class="tab-arrow" aria-hidden="true">↗</span></button>
-        </div>
-        <div class="research-panel" id="panel-3d" role="tabpanel" aria-labelledby="tab-3d" tabindex="0">
-          <figure class="research-visual"><img src="assets/research-3d.webp" width="609" height="341" alt="Illustrative aerial 3D scene with buildings and terrain" data-i18n-alt="image3d"><figcaption><span>01 / GEOX-3D</span><span data-i18n="illustration">RESEARCH ILLUSTRATION</span></figcaption><span class="image-cross cross-tl" aria-hidden="true">+</span><span class="image-cross cross-br" aria-hidden="true">+</span></figure>
-          <div class="research-copy"><p class="eyebrow" data-i18n="category3d">SPATIAL INTELLIGENCE</p><h3 data-i18n="title3d">Reconstruct the world.<br>Create what comes next.</h3><p data-i18n="desc3d">Exploring 3D reconstruction, scene generation, and spatial representations for geospatial environments across scales.</p><ul class="research-topics"><li data-i18n="topic3d1">Large-scale 3D reconstruction</li><li data-i18n="topic3d2">3D scene generation</li><li data-i18n="topic3d3">Spatial representations</li></ul><span class="research-domain" data-i18n="domain3d">GEOMETRY / APPEARANCE / SPACE</span></div>
-        </div>
-        <div class="research-panel" id="panel-marine" role="tabpanel" aria-labelledby="tab-marine" tabindex="0" hidden>
-          <figure class="research-visual"><img src="assets/research-marine.webp" width="605" height="335" alt="Illustration of a maritime environment with vessels and coastal terrain" data-i18n-alt="imageMarine" loading="lazy"><figcaption><span>02 / GEOX-MARINE</span><span data-i18n="illustration">RESEARCH ILLUSTRATION</span></figcaption><span class="image-cross cross-tl" aria-hidden="true">+</span><span class="image-cross cross-br" aria-hidden="true">+</span></figure>
-          <div class="research-copy"><p class="eyebrow" data-i18n="categoryMarine">MARITIME INTELLIGENCE</p><h3 data-i18n="titleMarine">Complex waters.<br>Connected worlds.</h3><p data-i18n="descMarine">Studying world modeling, dynamic evolution, and scenario simulation for maritime and complex coastal environments.</p><ul class="research-topics"><li data-i18n="topicMarine1">Maritime world modeling</li><li data-i18n="topicMarine2">Coastal scene simulation</li><li data-i18n="topicMarine3">Dynamic environment modeling</li></ul><span class="research-domain" data-i18n="domainMarine">OCEANS / VESSELS / ENVIRONMENTS</span></div>
-        </div>
-        <div class="research-panel" id="panel-video" role="tabpanel" aria-labelledby="tab-video" tabindex="0" hidden>
-          <figure class="research-visual"><img src="assets/research-video.webp" width="608" height="335" alt="Aerial coastal landscape illustrating video generation and dynamic visual environments" data-i18n-alt="imageVideo" loading="lazy"><figcaption><span>03 / GEOX-VIDEO</span><span data-i18n="illustration">RESEARCH ILLUSTRATION</span></figcaption><span class="image-cross cross-tl" aria-hidden="true">+</span><span class="image-cross cross-br" aria-hidden="true">+</span></figure>
-          <div class="research-copy"><p class="eyebrow" data-i18n="categoryVideo">DYNAMIC VISUAL WORLDS</p><h3 data-i18n="titleVideo">Beyond a frame.<br>Into a moving world.</h3><p data-i18n="descVideo">Exploring video generation and spatiotemporal modeling for aerial imagery and other dynamic visual environments.</p><ul class="research-topics"><li data-i18n="topicVideo1">Aerial video generation</li><li data-i18n="topicVideo2">Camera-conditioned modeling</li><li data-i18n="topicVideo3">Spatiotemporal representations</li></ul><span class="research-domain" data-i18n="domainVideo">MOTION / PERSPECTIVE / TIME</span></div>
-        </div>
-        <div class="research-panel" id="panel-physics" role="tabpanel" aria-labelledby="tab-physics" tabindex="0" hidden>
-          <figure class="research-visual"><img src="assets/research-physics.webp" width="1000" height="560" alt="Illustrative visualization of wind and physical environmental fields" data-i18n-alt="imagePhysics" loading="lazy"><figcaption><span>04 / GEOX-PHYSICS</span><span data-i18n="illustration">RESEARCH ILLUSTRATION</span></figcaption><span class="image-cross cross-tl" aria-hidden="true">+</span><span class="image-cross cross-br" aria-hidden="true">+</span></figure>
-          <div class="research-copy"><p class="eyebrow" data-i18n="categoryPhysics">PHYSICAL ENVIRONMENTS</p><h3 data-i18n="titlePhysics">Invisible processes.<br>New perspectives.</h3><p data-i18n="descPhysics">Investigating the reconstruction, super-resolution, and dynamic modeling of wind fields and other physical environments.</p><ul class="research-topics"><li data-i18n="topicPhysics1">Wind-field reconstruction</li><li data-i18n="topicPhysics2">Physical-field super-resolution</li><li data-i18n="topicPhysics3">Environmental dynamics</li></ul><span class="research-domain" data-i18n="domainPhysics">FIELDS / DYNAMICS / PHYSICS</span></div>
-        </div>
-        <noscript><style>.research-panel[hidden]{display:grid!important;margin-top:40px}.research-tabs{display:none}@media(max-width:760px){.nav-shell{height:auto;min-height:76px;flex-wrap:wrap;padding-block:16px}.main-nav{display:flex;position:static;order:3;flex-basis:100%;flex-direction:row;padding:0;box-shadow:none;border:0;gap:24px}.main-nav a{font-size:12px;padding:8px 0}.menu-toggle{display:none}}</style></noscript>
-      </div>
-    </section>
-
-    <section class="about section-space" id="about" aria-labelledby="about-heading">
-      <div class="about-globe" aria-hidden="true"><svg viewBox="0 0 600 600" fill="none"><g stroke="currentColor" stroke-width=".65"><circle cx="300" cy="300" r="260"/><ellipse cx="300" cy="300" rx="190" ry="260"/><ellipse cx="300" cy="300" rx="95" ry="260"/><path d="M300 40v520M40 300h520"/><ellipse cx="300" cy="300" rx="260" ry="190"/><ellipse cx="300" cy="300" rx="260" ry="95"/><ellipse cx="300" cy="300" rx="260" ry="32"/><ellipse cx="300" cy="300" rx="32" ry="260"/></g><circle cx="473" cy="192" r="6" fill="#d7f782"/><circle cx="473" cy="192" r="16" stroke="#d7f782" opacity=".4"/></svg></div>
-      <div class="wrap about-inner">
-        <div class="section-marker"><span data-i18n="aboutEyebrow">03 / ABOUT GEOX</span><span class="marker-line"></span><span aria-hidden="true">↗</span></div>
-        <div class="about-content"><h2 id="about-heading"><span data-i18n="aboutLine1">Across scales.</span><span data-i18n="aboutLine2">Across worlds.</span></h2><p data-i18n="aboutDescription">GeoX is a collaborative research initiative for geospatial world models. We connect research in 3D reconstruction and generation, maritime modeling, video generation, and physical environments.</p><p class="about-secondary" data-i18n="aboutDescription2">A shared vision brings these directions together: developing richer representations of our world and exploring how it can be reconstructed, generated, and simulated.</p><a class="text-link" href="https://github.com/GeoX-research" target="_blank" rel="noopener noreferrer"><span data-i18n="aboutCta">Discover GeoX on GitHub</span><span aria-hidden="true">↗</span></a></div>
-        <p class="about-caption" data-i18n="aboutCaption">SPACE × TIME × PHYSICS</p>
-      </div>
-    </section>
-
-    <section class="connect" aria-labelledby="connect-heading"><div class="wrap connect-inner"><div><p class="eyebrow" data-i18n="connectEyebrow">FOLLOW THE EXPLORATION</p><h2 id="connect-heading" data-i18n="connectHeading">The next perspective<br>starts here.</h2></div><div class="connect-action"><p data-i18n="connectDescription">Explore our research initiative and follow future resources on GitHub.</p><a class="button button-dark" href="https://github.com/GeoX-research" target="_blank" rel="noopener noreferrer"><span data-i18n="connectCta">Visit our GitHub</span><span aria-hidden="true">↗</span></a></div></div></section>
-  </main>
-  <footer class="site-footer"><div class="wrap"><div class="footer-main"><a class="brand footer-brand" href="#home" aria-label="GeoX home"><span>Geo<span class="brand-x">X</span></span></a><p data-i18n="footerDescriptor">Geospatial World Models<br>Reconstruct. Generate. Simulate.</p><a class="back-top" href="#home"><span data-i18n="backTop">Back to top</span><span aria-hidden="true">↑</span></a></div><div class="footer-bottom"><span>© <span id="year">2026</span> GeoX Research</span><a class="image-credit" href="https://science.nasa.gov/earth/earth-observatory/the-arctics-largest-delta-148899/" target="_blank" rel="noopener noreferrer" data-i18n="imageCredit">Satellite imagery: NASA Earth Observatory</a><a href="https://github.com/GeoX-research" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></footer>
-</body>
+    </footer>
+  </body>
 </html>
