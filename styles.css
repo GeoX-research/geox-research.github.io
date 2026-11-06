@@ -423,7 +423,7 @@ a:focus-visible,
 }
 .vision-copy p + p {
   margin-top: 18px;
-  color: #777777;
+  color: #757575;
 }
 .principles {
   display: grid;
@@ -439,7 +439,7 @@ a:focus-visible,
 .principle-number {
   font-family: Consolas, monospace;
   font-size: 10px;
-  color: #777777;
+  color: #757575;
 }
 .principles h3 {
   font-size: 27px;
@@ -505,7 +505,7 @@ a:focus-visible,
   font-family: Consolas, monospace;
   font-size: 10px;
   align-self: center;
-  color: #888888;
+  color: #686868;
 }
 .tab-arrow {
   margin-left: auto;
