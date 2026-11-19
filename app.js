@@ -107,7 +107,6 @@
       footerDescriptor:
         "Geospatial World Models\nReconstruct. Generate. Predict.",
       backTop: "Back to top",
-      imageCredit: "Satellite imagery: NASA Earth Observatory",
     },
     zh: {
       pageTitle: "GeoX — 地理空间世界模型",
@@ -202,7 +201,6 @@
       connectCta: "访问 GitHub",
       footerDescriptor: "地理空间世界模型\n重建 · 生成 · 预测",
       backTop: "返回顶部",
-      imageCredit: "卫星影像：NASA 地球观测站",
     },
   };
 
