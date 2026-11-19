@@ -5,9 +5,9 @@
     en: {
       pageTitle: "GeoX — Geospatial World Models",
       pageDescription:
-        "GeoX is a collaborative research initiative exploring geospatial world models through 3D reconstruction, maritime simulation, video generation, and physical environment modeling.",
+        "GeoX is a collaborative research initiative exploring geospatial world models through 3D reconstruction, maritime modeling and prediction, video generation, and physical environment modeling.",
       socialDescription:
-        "Reconstruct. Generate. Simulate. Exploring geospatial world models across space, time, and physics.",
+        "Reconstruct. Generate. Predict. Exploring geospatial world models across space, time, and physics.",
       skip: "Skip to content",
       navVision: "Our vision",
       navResearch: "Research",
@@ -24,26 +24,26 @@
       heroLine1: "A world to understand.",
       heroLine2: "New worlds to create.",
       heroDescription:
-        "Connecting spatial intelligence, generative modeling, and physical simulation to explore the world beyond observation.",
+        "Connecting spatial intelligence, generative modeling, and physics-based prediction to explore the world beyond observation.",
       heroCta: "Explore our research",
-      heroMantra: "RECONSTRUCT / GENERATE / SIMULATE",
+      heroMantra: "RECONSTRUCT / GENERATE / PREDICT",
       heroLocation: "LENA RIVER DELTA · EARTH OBSERVATION",
       visionEyebrow: "01 / OUR VISION",
-      visionLine1: "Beyond observation.",
-      visionLine2: "Toward world models.",
+      visionLine1: "From observing the world.",
+      visionLine2: "To predicting the world.",
       visionDescription:
         "The world is spatial, dynamic, and interconnected. Understanding it calls for models that bring geometry, appearance, motion, and physical processes together.",
       visionDescription2:
-        "GeoX explores this shared foundation through four complementary research directions — from reconstructed scenes to simulated environments.",
+        "GeoX explores this shared foundation through four complementary research directions — from understanding scenes to predicting the future.",
       reconstruct: "Reconstruct.",
       reconstructText:
         "Recover the structure and state of the world from observations.",
       generate: "Generate.",
       generateText:
         "Explore new scenes and dynamic visual worlds through generative models.",
-      simulate: "Simulate.",
-      simulateText:
-        "Model how environments evolve across space, time, and physical processes.",
+      predict: "Predict.",
+      predictText:
+        "Predict how environments evolve across space, time, and physical processes.",
       researchEyebrow: "02 / RESEARCH DIRECTIONS",
       researchLine1: "One world.",
       researchLine2: "Four perspectives.",
@@ -65,9 +65,9 @@
       categoryMarine: "MARITIME INTELLIGENCE",
       titleMarine: "Complex waters.\nConnected worlds.",
       descMarine:
-        "Studying world modeling, dynamic evolution, and scenario simulation for maritime and complex coastal environments.",
+        "Studying world modeling and predicting dynamic change in complex ocean environments.",
       topicMarine1: "Maritime world modeling",
-      topicMarine2: "Coastal scene simulation",
+      topicMarine2: "Coastal environment prediction",
       topicMarine3: "Dynamic environment modeling",
       domainMarine: "OCEANS / VESSELS / ENVIRONMENTS",
       imageVideo:
@@ -85,7 +85,7 @@
       categoryPhysics: "PHYSICAL ENVIRONMENTS",
       titlePhysics: "Invisible processes.\nNew perspectives.",
       descPhysics:
-        "Investigating the reconstruction, super-resolution, and dynamic modeling of wind fields and other physical environments.",
+        "Investigating state reconstruction, super-resolution, and dynamic modeling of multiscale physical processes across the Earth system.",
       topicPhysics1: "Wind-field reconstruction",
       topicPhysics2: "Physical-field super-resolution",
       topicPhysics3: "Environmental dynamics",
@@ -96,7 +96,7 @@
       aboutDescription:
         "GeoX is a collaborative research initiative for geospatial world models. We connect research in 3D reconstruction and generation, maritime modeling, video generation, and physical environments.",
       aboutDescription2:
-        "A shared vision brings these directions together: developing richer representations of our world and exploring how it can be reconstructed, generated, and simulated.",
+        "A shared vision brings these directions together: developing richer representations of our world to reconstruct its structure, generate new scenes, and predict how environments evolve.",
       aboutCta: "Discover GeoX on GitHub",
       aboutCaption: "SPACE × TIME × PHYSICS",
       connectEyebrow: "FOLLOW THE EXPLORATION",
@@ -105,16 +105,16 @@
         "Explore our research initiative and follow future resources on GitHub.",
       connectCta: "Visit our GitHub",
       footerDescriptor:
-        "Geospatial World Models\nReconstruct. Generate. Simulate.",
+        "Geospatial World Models\nReconstruct. Generate. Predict.",
       backTop: "Back to top",
       imageCredit: "Satellite imagery: NASA Earth Observatory",
     },
     zh: {
       pageTitle: "GeoX — 地理空间世界模型",
       pageDescription:
-        "GeoX 是面向地理空间世界模型的联合科研计划，围绕三维重建与生成、船海建模与仿真、视频生成以及物理环境建模开展研究。",
+        "GeoX 是面向地理空间世界模型的联合科研计划，围绕三维重建与生成、船海建模与预测、视频生成以及物理环境建模开展研究。",
       socialDescription:
-        "重建 · 生成 · 仿真。连接空间、时间与物理过程，探索地理空间世界模型。",
+        "重建 · 生成 · 预测。连接空间、时间与物理过程，探索地理空间世界模型。",
       skip: "跳至主要内容",
       navVision: "研究愿景",
       navResearch: "研究方向",
@@ -130,23 +130,23 @@
       heroLine1: "理解我们所处的世界。",
       heroLine2: "创造尚未抵达的世界。",
       heroDescription:
-        "连接空间智能、生成式建模与物理仿真，从观测出发，探索世界的更多可能。",
+        "连接空间智能、生成式建模与物理过程预测，从观测出发，探索世界的更多可能。",
       heroCta: "探索研究方向",
-      heroMantra: "重建 / 生成 / 仿真",
+      heroMantra: "重建 / 生成 / 预测",
       heroLocation: "勒拿河三角洲 · 地球观测",
       visionEyebrow: "01 / 研究愿景",
       visionLine1: "从观测世界，",
-      visionLine2: "到构建世界模型。",
+      visionLine2: "到预测世界。",
       visionDescription:
         "世界存在于空间之中，随时间演化，也由相互关联的过程构成。理解这样的世界，需要将几何、外观、运动与物理过程融为一体的模型。",
       visionDescription2:
-        "GeoX 以四个相互支撑的研究方向探索这一共同基础，从场景重建走向环境仿真。",
+        "GeoX 以四个相互支撑的研究方向探索这一共同基础，从场景理解走向预测未来。",
       reconstruct: "重建。",
       reconstructText: "从观测中恢复世界的结构与状态。",
       generate: "生成。",
       generateText: "通过生成式模型，探索新的场景与动态视觉世界。",
-      simulate: "仿真。",
-      simulateText: "刻画环境在空间、时间与物理过程中的演化。",
+      predict: "预测。",
+      predictText: "预测环境在空间、时间与物理过程中的演化。",
       researchEyebrow: "02 / 研究方向",
       researchLine1: "一个世界，",
       researchLine2: "四种视角。",
@@ -165,9 +165,9 @@
       imageMarine: "包含船舶与海岸地形的船海环境示意图",
       categoryMarine: "船海智能",
       titleMarine: "复杂海域，\n相连的世界。",
-      descMarine: "围绕船海与复杂海岸环境，研究世界建模、动态演化与场景仿真。",
+      descMarine: "围绕复杂海洋环境，研究世界建模、动态演化与环境预测。",
       topicMarine1: "船海世界建模",
-      topicMarine2: "海岸场景仿真",
+      topicMarine2: "海岸环境预测",
       topicMarine3: "动态环境建模",
       domainMarine: "海洋 / 船舶 / 环境",
       imageVideo: "用于说明视频生成与动态视觉环境的航拍海岸景观示意图",
@@ -181,7 +181,7 @@
       imagePhysics: "风场及物理环境场的可视化示意图",
       categoryPhysics: "物理环境智能",
       titlePhysics: "让隐形过程，\n呈现新的视角。",
-      descPhysics: "围绕风场等物理环境，研究状态重建、超分辨率与动态建模。",
+      descPhysics: "面向地球系统中的多尺度物理过程，研究状态重建、超分辨率与动态建模。",
       topicPhysics1: "风场重建",
       topicPhysics2: "物理场超分辨率",
       topicPhysics3: "环境动态建模",
@@ -192,7 +192,7 @@
       aboutDescription:
         "GeoX 是面向地理空间世界模型的联合科研计划，连接三维重建与生成、船海建模、视频生成以及物理环境等方向的研究。",
       aboutDescription2:
-        "我们以共同愿景汇聚这些方向：构建更丰富的世界表示，探索世界如何被重建、生成与仿真。",
+        "我们以共同愿景汇聚这些方向：构建更丰富的世界表示，探索场景重建、生成与环境演化预测。",
       aboutCta: "在 GitHub 了解 GeoX",
       aboutCaption: "空间 × 时间 × 物理",
       connectEyebrow: "关注我们的探索",
@@ -200,7 +200,7 @@
       connectDescription:
         "在 GitHub 了解 GeoX 研究计划，关注后续共享的研究资源。",
       connectCta: "访问 GitHub",
-      footerDescriptor: "地理空间世界模型\n重建 · 生成 · 仿真",
+      footerDescriptor: "地理空间世界模型\n重建 · 生成 · 预测",
       backTop: "返回顶部",
       imageCredit: "卫星影像：NASA 地球观测站",
     },
@@ -214,6 +214,179 @@
   const languageLabel = document.getElementById("language-label");
   let language = "en";
   let menuOpen = false;
+  let motionQuery = null;
+  try {
+    motionQuery = window.matchMedia?.("(prefers-reduced-motion: reduce)");
+  } catch {
+    /* Motion remains progressive when preference APIs are unavailable. */
+  }
+  let reducedMotion = Boolean(motionQuery?.matches);
+  const panelAnimations = new Set();
+  const hero = document.querySelector(".hero");
+  const revealItems = Array.from(
+    document.querySelectorAll(
+      ".section-marker, .vision-intro, .principles article, .section-heading, " +
+        ".research-tabs, .research-visual, .research-panel .research-copy, " +
+        ".about-content, .about-globe, .about-caption, .connect-inner, .footer-main",
+    ),
+  );
+  let revealObserver = null;
+  let heroObserver = null;
+  let heroInView = true;
+
+  function cancelPanelAnimations() {
+    panelAnimations.forEach((animation) => animation.cancel());
+    panelAnimations.clear();
+  }
+
+  function revealItem(element) {
+    element.classList.add("is-visible");
+  }
+
+  function containsFocus(element) {
+    return element.contains(document.activeElement);
+  }
+
+  function isOutsideViewport(bounds) {
+    return bounds.bottom <= 0 || bounds.top >= window.innerHeight;
+  }
+
+  function resetOutsideItem(element, bounds) {
+    if (isOutsideViewport(bounds) && !containsFocus(element)) {
+      // Move farther out on the exit side. A fixed downward reset could push
+      // a short item back into the observer at the top edge and flicker.
+      element.style.setProperty(
+        "--reveal-y",
+        bounds.bottom <= 0 ? "-28px" : "28px",
+      );
+      element.classList.remove("is-visible");
+    }
+  }
+
+  function resetItemAfterFocus(element) {
+    if (containsFocus(element)) return;
+    if (element.closest("[hidden]")) {
+      element.classList.remove("is-visible");
+      return;
+    }
+    resetOutsideItem(element, element.getBoundingClientRect());
+  }
+
+  function revealPanel(panel) {
+    panel?.querySelectorAll(".reveal-item").forEach(revealItem);
+  }
+
+  function animatePanel(panel) {
+    if (reducedMotion || !panel || typeof panel.animate !== "function")
+      return;
+    try {
+      const animation = panel.animate(
+        [
+          { opacity: 0, transform: "translateY(10px)" },
+          { opacity: 1, transform: "translateY(0)" },
+        ],
+        {
+          duration: 420,
+          easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+          fill: "none",
+        },
+      );
+      panelAnimations.add(animation);
+      animation.onfinish = animation.oncancel = () =>
+        panelAnimations.delete(animation);
+    } catch {
+      /* A failed optional animation must never block the selected content. */
+    }
+  }
+
+  function showAllMotionContent() {
+    revealObserver?.disconnect();
+    heroObserver?.disconnect();
+    revealObserver = null;
+    heroObserver = null;
+    root.classList.remove("motion-ready");
+    root.classList.add("hero-is-ready");
+    revealItems.forEach((element) => element.classList.add("is-visible"));
+    root.style.setProperty("--hero-offset", "0px");
+  }
+
+  function initializeMotion() {
+    revealObserver?.disconnect();
+    heroObserver?.disconnect();
+    root.classList.remove("motion-ready");
+    revealItems.forEach((element) => element.classList.add("reveal-item"));
+    if (
+      reducedMotion ||
+      typeof window.IntersectionObserver !== "function" ||
+      typeof window.requestAnimationFrame !== "function"
+    ) {
+      showAllMotionContent();
+      return;
+    }
+    try {
+      revealObserver = new window.IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Enter after a small visible area; crossing this threshold on
+              // exit never hides an item that remains on screen.
+              if (entry.intersectionRatio >= 0.08 || containsFocus(entry.target))
+                revealItem(entry.target);
+            } else {
+              resetOutsideItem(entry.target, entry.boundingClientRect);
+            }
+          });
+        },
+        { threshold: [0, 0.08], rootMargin: "0px" },
+      );
+      revealItems.forEach((element) => {
+        // Hidden research panels are observed without measuring their layout.
+        if (!element.closest("[hidden]")) {
+          const bounds = element.getBoundingClientRect();
+          if (!isOutsideViewport(bounds) || containsFocus(element)) {
+            revealItem(element);
+          } else {
+            resetOutsideItem(element, bounds);
+          }
+        } else {
+          element.classList.remove("is-visible");
+        }
+        revealObserver.observe(element);
+      });
+      if (hero) {
+        heroInView = !isOutsideViewport(hero.getBoundingClientRect());
+        heroObserver = new window.IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              heroInView = entry.isIntersecting;
+              if (heroInView) {
+                root.classList.add("hero-is-ready");
+                updateScrollEffects();
+              } else if (
+                isOutsideViewport(entry.boundingClientRect) &&
+                !containsFocus(hero)
+              ) {
+                root.classList.remove("hero-is-ready");
+              }
+            });
+          },
+          { threshold: 0 },
+        );
+        heroObserver.observe(hero);
+      }
+      // CSS only hides unrevealed items after both observers are usable.
+      root.classList.add("motion-ready");
+      window.requestAnimationFrame(() => {
+        if (!hero || heroInView || containsFocus(hero)) {
+          root.classList.add("hero-is-ready");
+        } else {
+          root.classList.remove("hero-is-ready");
+        }
+      });
+    } catch {
+      showAllMotionContent();
+    }
+  }
 
   // Keep translated line breaks without accepting HTML in the content strings.
   function setText(element, value) {
@@ -296,28 +469,20 @@
       "og:locale:alternate",
       language === "zh" ? "en_US" : "zh_CN",
     );
-    try {
-      localStorage.setItem("geox_lang", language);
-    } catch {
-      /* Storage may be disabled. */
-    }
   }
 
-  try {
-    const savedLanguage = localStorage.getItem("geox_lang");
-    if (savedLanguage === "zh" || savedLanguage === "en")
-      language = savedLanguage;
-  } catch {
-    /* English remains the default when storage is unavailable. */
-  }
-  setLanguage(language);
+  // Each page load starts in English; the switch remains available in-page.
+  setLanguage("en");
   languageButton?.addEventListener("click", () =>
     setLanguage(language === "en" ? "zh" : "en"),
   );
 
   document.querySelectorAll('[role="tablist"]').forEach((tablist) => {
     const tabs = Array.from(tablist.querySelectorAll('[role="tab"]'));
-    function activateTab(selected, moveFocus = false) {
+    function activateTab(selected, moveFocus = false, animate = true) {
+      const changed = selected.getAttribute("aria-selected") !== "true";
+      if (changed) cancelPanelAnimations();
+      let selectedPanel = null;
       tabs.forEach((tab) => {
         const active = tab === selected;
         tab.setAttribute("aria-selected", String(active));
@@ -325,9 +490,14 @@
         const panel = document.getElementById(
           tab.getAttribute("aria-controls"),
         );
-        if (panel) panel.hidden = !active;
+        if (panel) {
+          panel.hidden = !active;
+          if (active) selectedPanel = panel;
+        }
       });
+      revealPanel(selectedPanel);
       if (moveFocus) selected.focus({ preventScroll: true });
+      if (changed && animate) animatePanel(selectedPanel);
     }
     tabs.forEach((tab, index) => {
       tab.addEventListener("click", () => activateTab(tab));
@@ -346,7 +516,7 @@
     const initialTab =
       tabs.find((tab) => tab.getAttribute("aria-selected") === "true") ||
       tabs[0];
-    if (initialTab) activateTab(initialTab);
+    if (initialTab) activateTab(initialTab, false, false);
   });
 
   function setMenu(open, restoreFocus = false) {
@@ -423,26 +593,110 @@
   function updateHeader() {
     header?.classList.toggle("is-scrolled", window.scrollY > 24);
   }
+  function updateScrollEffects() {
+    const scroll = Math.max(0, window.scrollY);
+    const distance = Math.max(0, root.scrollHeight - window.innerHeight);
+    const progress = distance > 0 ? Math.min(1, scroll / distance) : 0;
+    root.style.setProperty("--scroll-progress", String(progress));
+    if (reducedMotion) {
+      root.style.setProperty("--hero-offset", "0px");
+    } else if (heroInView && root.classList.contains("motion-ready")) {
+      root.style.setProperty("--hero-offset", `${-Math.min(24, scroll * 0.045)}px`);
+    }
+  }
+  document.addEventListener("focusin", (event) => {
+    const target = event.target;
+    if (!target?.closest) return;
+    let item = target.closest(".reveal-item");
+    while (item) {
+      revealItem(item);
+      item = item.parentElement?.closest(".reveal-item");
+    }
+    revealPanel(target.closest(".research-panel"));
+    if (target.closest(".hero")) root.classList.add("hero-is-ready");
+  });
+  document.addEventListener("focusout", (event) => {
+    const target = event.target;
+    if (!target?.closest) return;
+    // Focus has moved by the next microtask. Do not hide a shared ancestor
+    // when the next keyboard target is inside the same reveal item.
+    const afterFocusMoves = () => {
+      if (reducedMotion || !root.classList.contains("motion-ready")) return;
+      let item = target.closest(".reveal-item");
+      while (item) {
+        resetItemAfterFocus(item);
+        item = item.parentElement?.closest(".reveal-item");
+      }
+      const panel = target.closest(".research-panel");
+      if (panel && !containsFocus(panel)) {
+        panel.querySelectorAll(".reveal-item").forEach(resetItemAfterFocus);
+      }
+      if (
+        target.closest(".hero") &&
+        hero &&
+        !containsFocus(hero) &&
+        isOutsideViewport(hero.getBoundingClientRect())
+      ) {
+        root.classList.remove("hero-is-ready");
+      }
+    };
+    if (typeof window.queueMicrotask === "function") {
+      window.queueMicrotask(afterFocusMoves);
+    } else {
+      Promise.resolve().then(afterFocusMoves);
+    }
+  });
+  function updateMotionPreference(event) {
+    reducedMotion = Boolean(event.matches);
+    if (reducedMotion) {
+      cancelPanelAnimations();
+      showAllMotionContent();
+    } else {
+      initializeMotion();
+    }
+    updateScrollEffects();
+  }
+  if (motionQuery?.addEventListener) {
+    motionQuery.addEventListener("change", updateMotionPreference);
+  } else if (motionQuery?.addListener) {
+    motionQuery.addListener(updateMotionPreference);
+  }
+  initializeMotion();
   updateHeader();
   updateActiveSection();
+  updateScrollEffects();
   let scrollFramePending = false;
   window.addEventListener(
     "scroll",
     () => {
       if (scrollFramePending) return;
       scrollFramePending = true;
-      window.requestAnimationFrame(() => {
+      const updateScrollFrame = () => {
         updateHeader();
         updateActiveSection();
+        updateScrollEffects();
         scrollFramePending = false;
-      });
+      };
+      if (typeof window.requestAnimationFrame === "function") {
+        window.requestAnimationFrame(updateScrollFrame);
+      } else {
+        updateScrollFrame();
+      }
     },
     { passive: true },
   );
-  window.addEventListener("resize", updateActiveSection, { passive: true });
+  window.addEventListener(
+    "resize",
+    () => {
+      updateActiveSection();
+      updateScrollEffects();
+    },
+    { passive: true },
+  );
   window.addEventListener("pageshow", () => {
     updateHeader();
     updateActiveSection();
+    updateScrollEffects();
   });
   const year = document.getElementById("year");
   if (year) year.textContent = String(new Date().getFullYear());

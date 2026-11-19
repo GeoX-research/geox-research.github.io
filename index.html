@@ -6,13 +6,13 @@
     <meta name="theme-color" content="#010102" />
     <meta
       name="description"
-      content="GeoX is a collaborative research initiative exploring geospatial world models through 3D reconstruction, maritime simulation, video generation, and physical environment modeling."
+      content="GeoX is a collaborative research initiative exploring geospatial world models through 3D reconstruction, maritime modeling and prediction, video generation, and physical environment modeling."
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="GeoX — Geospatial World Models" />
     <meta
       property="og:description"
-      content="Reconstruct. Generate. Simulate. Exploring the next frontier of geospatial world models."
+      content="Reconstruct. Generate. Predict. Exploring the next frontier of geospatial world models."
     />
     <meta property="og:url" content="https://geox-research.github.io/" />
     <meta
@@ -27,7 +27,7 @@
     <meta name="twitter:title" content="GeoX — Geospatial World Models" />
     <meta
       name="twitter:description"
-      content="Reconstruct. Generate. Simulate. Exploring geospatial world models."
+      content="Reconstruct. Generate. Predict. Exploring geospatial world models."
     />
     <link rel="canonical" href="https://geox-research.github.io/" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
@@ -37,8 +37,8 @@
       href="assets/hero-delta.jpg"
       fetchpriority="high"
     />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.css?v=20261107-predict-x" />
+    <script src="app.js?v=20261119-earth-system-copy" defer></script>
     <title>GeoX — Geospatial World Models</title>
   </head>
   <body>
@@ -46,9 +46,14 @@
     <header class="site-header" id="top">
       <div class="nav-shell">
         <a class="brand" href="#home" aria-label="GeoX home"
-          ><span class="brand-symbol" aria-hidden="true"
-            ><i></i><i></i><i></i><i></i></span
-          ><span
+          ><img
+            class="brand-symbol"
+            src="assets/geox-globe-icon-blue.png"
+            alt=""
+            aria-hidden="true"
+            width="67"
+            height="67"
+          /><span
             >Geo<span class="brand-x">X</span><small>RESEARCH</small></span
           ></a
         >
@@ -122,8 +127,8 @@
             >
           </h1>
           <p class="hero-description" data-i18n="heroDescription">
-            Connecting spatial intelligence, generative modeling, and physical
-            simulation to explore the world beyond observation.
+            Connecting spatial intelligence, generative modeling, and
+            physics-based prediction to explore the world beyond observation.
           </p>
           <a class="button button-primary" href="#research"
             ><span data-i18n="heroCta">Explore our research</span
@@ -132,7 +137,7 @@
         </div>
         <div class="hero-bottom wrap">
           <p class="hero-mantra" data-i18n="heroMantra">
-            RECONSTRUCT / GENERATE / SIMULATE
+            RECONSTRUCT / GENERATE / PREDICT
           </p>
           <span class="hero-image-label" data-i18n="heroLocation"
             >LENA RIVER DELTA · EARTH OBSERVATION</span
@@ -159,9 +164,9 @@
           </div>
           <div class="vision-intro">
             <h2 id="vision-heading">
-              <span data-i18n="visionLine1">Beyond observation.</span
-              ><span class="text-muted" data-i18n="visionLine2"
-                >Toward world models.</span
+              <span data-i18n="visionLine1">From observing the world.</span
+              ><span data-i18n="visionLine2"
+                >To predicting the world.</span
               >
             </h2>
             <div class="vision-copy">
@@ -172,8 +177,8 @@
               </p>
               <p data-i18n="visionDescription2">
                 GeoX explores this shared foundation through four complementary
-                research directions — from reconstructed scenes to simulated
-                environments.
+                research directions — from understanding scenes to predicting
+                the future.
               </p>
             </div>
           </div>
@@ -197,9 +202,9 @@
             </article>
             <article>
               <span class="principle-number">03</span>
-              <h3 data-i18n="simulate">Simulate.</h3>
-              <p data-i18n="simulateText">
-                Model how environments evolve across space, time, and physical
+              <h3 data-i18n="predict">Predict.</h3>
+              <p data-i18n="predictText">
+                Predict how environments evolve across space, time, and physical
                 processes.
               </p>
               <span class="principle-icon" aria-hidden="true">↗</span>
@@ -221,7 +226,7 @@
           <div class="section-heading">
             <h2 id="research-heading">
               <span data-i18n="researchLine1">One world.</span
-              ><span class="text-muted" data-i18n="researchLine2"
+              ><span data-i18n="researchLine2"
                 >Four perspectives.</span
               >
             </h2>
@@ -358,12 +363,12 @@
                 Complex waters.<br />Connected worlds.
               </h3>
               <p data-i18n="descMarine">
-                Studying world modeling, dynamic evolution, and scenario
-                simulation for maritime and complex coastal environments.
+                Studying world modeling and predicting dynamic change in complex
+                ocean environments.
               </p>
               <ul class="research-topics">
                 <li data-i18n="topicMarine1">Maritime world modeling</li>
-                <li data-i18n="topicMarine2">Coastal scene simulation</li>
+                <li data-i18n="topicMarine2">Coastal environment prediction</li>
                 <li data-i18n="topicMarine3">Dynamic environment modeling</li>
               </ul>
               <span class="research-domain" data-i18n="domainMarine"
@@ -448,8 +453,8 @@
                 Invisible processes.<br />New perspectives.
               </h3>
               <p data-i18n="descPhysics">
-                Investigating the reconstruction, super-resolution, and dynamic
-                modeling of wind fields and other physical environments.
+                Investigating state reconstruction, super-resolution, and dynamic
+                modeling of multiscale physical processes across the Earth system.
               </p>
               <ul class="research-topics">
                 <li data-i18n="topicPhysics1">Wind-field reconstruction</li>
@@ -520,8 +525,8 @@
               <ellipse cx="300" cy="300" rx="260" ry="32" />
               <ellipse cx="300" cy="300" rx="32" ry="260" />
             </g>
-            <circle cx="473" cy="192" r="6" fill="#3b82f6" />
-            <circle cx="473" cy="192" r="16" stroke="#3b82f6" opacity=".4" />
+            <circle cx="473" cy="192" r="6" fill="#5a92ff" />
+            <circle cx="473" cy="192" r="16" stroke="#5a92ff" opacity=".4" />
           </svg>
         </div>
         <div class="wrap about-inner">
@@ -541,8 +546,8 @@
             </p>
             <p class="about-secondary" data-i18n="aboutDescription2">
               A shared vision brings these directions together: developing
-              richer representations of our world and exploring how it can be
-              reconstructed, generated, and simulated.
+              richer representations of our world to reconstruct its structure,
+              generate new scenes, and predict how environments evolve.
             </p>
             <a
               class="text-link"
@@ -593,7 +598,7 @@
             ><span>Geo<span class="brand-x">X</span></span></a
           >
           <p data-i18n="footerDescriptor">
-            Geospatial World Models<br />Reconstruct. Generate. Simulate.
+            Geospatial World Models<br />Reconstruct. Generate. Predict.
           </p>
           <a class="back-top" href="#home"
             ><span data-i18n="backTop">Back to top</span
